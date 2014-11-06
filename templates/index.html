@@ -1,0 +1,15 @@
+<html>
+
+{% block contenido %}
+<ul>
+{% for var in userprofile %}
+<li>{{var.documento}}</li>
+<li>{{var.departamento}}</li>
+{% empty %}
+<li>sin datos</li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+			
+</html>

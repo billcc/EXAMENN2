@@ -1,0 +1,38 @@
+<html>
+
+{% block contenido %}
+
+
+
+
+ 
+<ul>
+<h1><label>Extender una clase de User con una relación uno a uno, para hacer un perfil de usuario:</label></h1>
+{% for var in userprofile_list %}
+
+
+<li><b><label>DOCUMENTO  :</label></b>  {{ var.documento }} <br/><b><label>USER  :</label></b>  {{ var.user}}<br/> <b><label>DISTRITO  :</label></b>  {{ var.distrito}} <br/> <b><label>PROVINCIA  :</label></b> {{ var.provincia}} <br/> <b><label>TIME_ZONE  :</label></b> {{var.time_zone}} <br/><b><label>DEPARTAMENTO  :</label></b> {{var.departamento }}</li>
+
+
+{% endfor %}
+
+</ul>
+
+
+
+
+
+{% endblock %}
+
+			
+</html>
+
+
+
+
+
+
+
+
+
+
